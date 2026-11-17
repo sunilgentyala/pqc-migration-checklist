@@ -1,8 +1,25 @@
+<p align="center"><img src="docs/banner.png" alt="PQC Migration Checklist: 22 testable yes/no items" width="100%"></p>
+
 # Post-Quantum Cryptography Migration Checklist
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE) [![Items](https://img.shields.io/badge/checklist_items-22-blue.svg)](CHECKLIST.md) [![Last verified](https://img.shields.io/badge/last_verified-2026--11--17-brightgreen.svg)](#what-was-not-verified) [![NIST_IR_8547](https://img.shields.io/badge/NIST_IR_8547-final-success.svg)](#verified-references) [![checks](https://github.com/sunilgentyala/pqc-migration-checklist/actions/workflows/checks.yml/badge.svg)](https://github.com/sunilgentyala/pqc-migration-checklist/actions/workflows/checks.yml)
 
 A testable yes/no checklist for planning and reviewing a migration from quantum-vulnerable public-key cryptography to post-quantum cryptography (PQC). Every item names a quick test and the source it rests on.
 
 > Last verified: 2026-11-17. **NIST IR 8547 is final (27 October 2026).** Many articles still describe the November 2024 draft. See [What was not verified](#what-was-not-verified), including why NSA CNSA 2.0 dates are not listed.
+
+## Contents
+
+- [1. Inventory](#1-inventory) (3 items)
+- [2. Prioritisation and timelines](#2-prioritisation-and-timelines) (6 items)
+- [3. Algorithm choices](#3-algorithm-choices) (5 items)
+- [4. Protocol deployment](#4-protocol-deployment) (4 items)
+- [5. Crypto agility](#5-crypto-agility) (2 items)
+- [6. Governance and evidence](#6-governance-and-evidence) (2 items)
+- [Scoring](#scoring)
+- [Verified references](#verified-references)
+- [What was not verified](#what-was-not-verified)
+- [Related checklists](#related-checklists)
 
 <p align="center"><img src="docs/demo.gif" alt="Replay of a real OpenSSL 3.5 handshake to a public host negotiating X25519MLKEM768, and an OpenSSH 10.3 listing that includes mlkem768x25519-sha256" width="760"></p>
 

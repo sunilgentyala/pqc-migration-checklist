@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this checklist, please cite it as below."
+title: "Post-quantum cryptography migration checklist"
+abstract: "Testable yes/no checklist for post-quantum cryptography migration: inventory, timelines, algorithm choices, protocol deployment."
+type: software
+authors:
+  - family-names: Gentyala
+    given-names: Sunil
+    orcid: "https://orcid.org/0009-0005-2642-3479"
+version: "1.0.0"
+date-released: "2026-11-17"
+license: MIT
+repository-code: "https://github.com/sunilgentyala/pqc-migration-checklist"
+url: "https://github.com/sunilgentyala/pqc-migration-checklist"
