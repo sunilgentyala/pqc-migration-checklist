@@ -4,7 +4,13 @@ A testable yes/no checklist for planning and reviewing a migration from quantum-
 
 > Last verified: 2026-11-17. **NIST IR 8547 is final (27 October 2026).** Many articles still describe the November 2024 draft. See [What was not verified](#what-was-not-verified), including why NSA CNSA 2.0 dates are not listed.
 
+<p align="center"><img src="docs/demo.gif" alt="Replay of a real OpenSSL 3.5 handshake to a public host negotiating X25519MLKEM768, and an OpenSSH 10.3 listing that includes mlkem768x25519-sha256" width="760"></p>
+
+*Items 4.1 and 4.2 run on a real host. The GIF is a replay of captured output, filtered to the key lines, not a live recording. The raw capture is in [docs/demo-capture.txt](docs/demo-capture.txt).*
+
 ## How to use it
+
+Want only the tick boxes? Copy [CHECKLIST.md](CHECKLIST.md).
 
 1. Copy the checklist into a migration plan or review ticket.
 2. Tick an item only after you ran its test and kept the output.
@@ -93,7 +99,7 @@ Retrieved 2026-11-17. Items marked "PDF" were read from the primary document tex
 - NIST CSWP 39 body text was not read.
 - The exact `ssh -vv` negotiated-algorithm output was not run.
 
-Found a wrong or untestable item? Open an issue or pull request. Each item must be a yes/no question with a test, and each new claim needs a primary source.
+Found a wrong or untestable item? Use the issue forms or open a pull request (a template guides you). Each item must be a yes/no question with a test, and each new claim needs a primary source.
 
 ## Related checklists
 

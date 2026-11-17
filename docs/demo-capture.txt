@@ -1,0 +1,15 @@
+# Real capture, 2026-11-17T17:37Z, host: <local>
+$ openssl version
+OpenSSL 3.5.7 9 Jun 2026 (Library: OpenSSL 3.5.7 9 Jun 2026)
+
+$ openssl s_client -connect cloudflare.com:443 -groups X25519MLKEM768 -brief
+CONNECTION ESTABLISHED
+Protocol version: TLSv1.3
+Ciphersuite: TLS_AES_256_GCM_SHA384
+Verification: OK
+Negotiated TLS1.3 group: X25519MLKEM768
+
+$ ssh -V
+OpenSSH_10.3p1, OpenSSL 3.5.7 9 Jun 2026
+$ ssh -Q kex | grep mlkem
+mlkem768x25519-sha256
