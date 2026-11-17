@@ -6,7 +6,7 @@
 
 A testable yes/no checklist for planning and reviewing a migration from quantum-vulnerable public-key cryptography to post-quantum cryptography (PQC). Every item names a quick test and the source it rests on.
 
-> Last verified: 2026-11-17. **NIST IR 8547 is final (27 October 2026).** Many articles still describe the November 2024 draft. See [What was not verified](#what-was-not-verified), including why NSA CNSA 2.0 dates are not listed.
+> Last verified: 2026-11-17. **NIST IR 8547 is final (27 October 2026).** Many articles still describe the November 2024 draft. See [What was not verified](#what-was-not-verified), including why CNSA 2.0 dates are not listed.
 
 ## Contents
 
@@ -99,6 +99,7 @@ Retrieved 2026-11-17. Items marked "PDF" were read from the primary document tex
 | FIPS 203, 204, 205 final, 13 Aug 2024 | [FIPS 203](https://csrc.nist.gov/pubs/fips/203/final), [204](https://csrc.nist.gov/pubs/fips/204/final), [205](https://csrc.nist.gov/pubs/fips/205/final) |
 | NIST SP 800-227 final, 18 Sep 2025 | [SP 800-227](https://csrc.nist.gov/pubs/sp/800/227/final) |
 | EO 14412, 22 June 2026; OMB M-26-15, 24 June 2026 | [EO 14412](https://www.whitehouse.gov/presidential-actions/2026/06/securing-the-nation-against-advanced-cryptographic-attacks/), [M-26-15 PDF](https://www.whitehouse.gov/wp-content/uploads/2026/06/M-26-15-Execution-of-the-Migration-to-Post-Quantum-Cryptography.pdf) |
+| NSA CNSA 2.0 advisory PP-22-1338, Sep 2022, Ver. 1.0 (PDF, superseded in part; see What was not verified) | [Advisory PDF](https://media.defense.gov/2025/May/30/2003728741/-1/-1/0/CSA_CNSA_2.0_ALGORITHMS.PDF) |
 | OMB M-23-02, 18 Nov 2022 | [M-23-02 PDF](https://www.whitehouse.gov/wp-content/uploads/2022/11/M-23-02-M-Memo-on-Migrating-to-Post-Quantum-Cryptography.pdf) |
 | CISA, NSA and NIST fact sheet, 21 Aug 2023 | [CISA page](https://www.cisa.gov/resources-tools/resources/quantum-readiness-migration-post-quantum-cryptography) |
 | RFC 10024, RFC 9954, RFC 9794, RFC 9881, RFC 9935, RFC 9936 | [rfc-editor.org](https://www.rfc-editor.org/) |
@@ -107,7 +108,7 @@ Retrieved 2026-11-17. Items marked "PDF" were read from the primary document tex
 
 ## What was not verified
 
-- **NSA CNSA 2.0 is not covered.** nsa.gov and media.defense.gov blocked automated access, and secondary sources disagree on its dates. If you work with national security systems, read the NSA advisory directly and record its version and date. Do not take CNSA 2.0 dates from this repo.
+- **NSA CNSA 2.0: only the 2022 advisory was read, and it is not the current version.** The PDF at the media.defense.gov URL below is "PP-22-1338, SEP 2022, Ver. 1.0" (read from its text on 2026-11-17). It names CRYSTALS-Kyber and CRYSTALS-Dilithium with specification "TBD", so it predates FIPS 203 and 204. What it does say, and what this repo can stand behind: AES with 256-bit keys, SHA-384 or SHA-512, and LMS or XMSS (NIST SP 800-208) for software and firmware signing. Its transition dates (for example 2030 to 2033 for exclusive use, 2035 for completion) are Ver. 1.0 dates and are not repeated in the checklist. The current CNSA 2.0 FAQ and any later NSA update were not read. If you work with national security systems, read the current NSA documents and record their version and date.
 - The SP 800-56B row of IR 8547 Table 4 could not be read cleanly. Confirm it visually in the PDF.
 - IR 8547 final was not compared line by line against the 2024 draft.
 - NIST SP 1800-38 (final status), the Mosca inequality formula, and exact ML-KEM and ML-DSA byte sizes were not verified.
